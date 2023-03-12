@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'homepage/icones.dart';
+import 'homepage/meus_cartoes.dart';
 import 'homepage/saldo_conta.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,10 +26,12 @@ class _HomePageState extends State<HomePage> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         _appBarNamed(),
-        SizedBox(height: 10),
-        SaldoConta(),
-        SizedBox(height: 10),
-        IconesPage()
+        const SizedBox(height: 10),
+        const SaldoConta(),
+        const SizedBox(height: 10),
+        const IconesPage(),
+        const SizedBox(height: 10),
+        const MeusCartoes(),
       ],
     );
   }
@@ -40,17 +43,17 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              icon: Icon(Icons.compare_arrows_sharp,
+              icon: const Icon(Icons.compare_arrows_sharp,
                   color: Color.fromARGB(255, 147, 147, 147), size: 30),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.monetization_on_sharp,
+              icon: const Icon(Icons.monetization_on_sharp,
                   color: Color.fromARGB(255, 147, 147, 147), size: 30),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.shopping_bag_rounded,
+              icon: const Icon(Icons.shopping_bag_rounded,
                   color: Color.fromARGB(255, 147, 147, 147), size: 30),
               onPressed: () {},
             ),

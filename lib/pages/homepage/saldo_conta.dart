@@ -44,7 +44,7 @@ class _SaldoContaState extends State<SaldoConta> {
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
           child: Text(
-            'R\$ 25.600,54',
+            'R\$ 48.623,42',
             style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 18,

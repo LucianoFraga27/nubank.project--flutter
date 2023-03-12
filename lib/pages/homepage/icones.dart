@@ -125,7 +125,7 @@ class IconesPage extends StatelessWidget {
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.purple,
-                                      borderRadius: BorderRadius.circular(3),
+                                      borderRadius: BorderRadius.circular(5),
                                       boxShadow: [
                                         BoxShadow(
                                           color: Colors.grey.withOpacity(0.1),
