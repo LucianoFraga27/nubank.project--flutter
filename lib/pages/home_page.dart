@@ -12,30 +12,87 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBarIcons(),
-      body: _appBarNamed(),
-      bottomNavigationBar: (BottomAppBar(
-          color: Color.fromARGB(255, 238, 238, 238),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              IconButton(
-                icon: Icon(Icons.compare_arrows_sharp,
-                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.monetization_on_sharp,
-                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.shopping_bag_rounded,
-                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
-                onPressed: () {},
-              ),
-            ],
-          ))),
+      body: _body(),
+      bottomNavigationBar: _bottomAppBar(),
     );
+  }
+
+  Column _body() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        _appBarNamed(),
+        SizedBox(height: 10),
+        Container(
+          //color: Colors.red,
+          height: 100,
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 10),
+                    child: Text(
+                      "Conta",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  Container(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      child: Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        size: 17,
+                        color: Color.fromARGB(255, 147, 147, 147),
+                      ))
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              child: Text(
+                'R\$ 25.600,54',
+                style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700),
+              ),
+            ),
+          ]),
+        ),
+      ],
+    );
+  }
+
+  BottomAppBar _bottomAppBar() {
+    return BottomAppBar(
+        color: const Color.fromARGB(255, 238, 238, 238),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              icon: Icon(Icons.compare_arrows_sharp,
+                  color: Color.fromARGB(255, 147, 147, 147), size: 30),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.monetization_on_sharp,
+                  color: Color.fromARGB(255, 147, 147, 147), size: 30),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.shopping_bag_rounded,
+                  color: Color.fromARGB(255, 147, 147, 147), size: 30),
+              onPressed: () {},
+            ),
+          ],
+        ));
   }
 
   AppBar _appBarIcons() {
