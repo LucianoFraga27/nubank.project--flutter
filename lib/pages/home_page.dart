@@ -13,6 +13,28 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: _appBarIcons(),
       body: _appBarNamed(),
+      bottomNavigationBar: (BottomAppBar(
+          color: Color.fromARGB(255, 238, 238, 238),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                icon: Icon(Icons.compare_arrows_sharp,
+                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.monetization_on_sharp,
+                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.shopping_bag_rounded,
+                    color: Color.fromARGB(255, 147, 147, 147), size: 30),
+                onPressed: () {},
+              ),
+            ],
+          ))),
     );
   }
 
