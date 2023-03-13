@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Bank Project',
       theme: ThemeData(
           primarySwatch: Colors.purple,
-          iconTheme: IconThemeData(
+          iconTheme: const IconThemeData(
             color: Colors.white,
           )),
       home: const HomePage(),

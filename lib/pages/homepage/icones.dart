@@ -9,7 +9,7 @@ class IconesPage extends StatelessWidget {
         //color: Colors.red,
         height: 130,
         width: double.infinity,
-        margin: EdgeInsets.only(left: 10),
+        margin: const EdgeInsets.only(left: 10),
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
@@ -217,7 +217,7 @@ class IconesPage extends StatelessWidget {
                         children: [
                           Icon(
                             color: Colors.black,
-                            Icons.pix,
+                            Icons.heart_broken_outlined,
                             size: 30,
                           ),
                         ],
@@ -226,7 +226,7 @@ class IconesPage extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 5),
                       child: Text(
-                        "Pix",
+                        "Doação",
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w500),
                       ),
@@ -251,7 +251,7 @@ class IconesPage extends StatelessWidget {
                         children: [
                           Icon(
                             color: Colors.black,
-                            Icons.pix,
+                            Icons.phone_android_outlined,
                             size: 30,
                           ),
                         ],
@@ -260,7 +260,8 @@ class IconesPage extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 5),
                       child: Text(
-                        "Pix",
+                        "Recarga",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w500),
                       ),

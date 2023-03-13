@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'homepage/card_novidades.dart';
 import 'homepage/icones.dart';
 import 'homepage/meus_cartoes.dart';
 import 'homepage/saldo_conta.dart';
@@ -21,18 +22,23 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Column _body() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        _appBarNamed(),
-        const SizedBox(height: 10),
-        const SaldoConta(),
-        const SizedBox(height: 10),
-        const IconesPage(),
-        const SizedBox(height: 10),
-        const MeusCartoes(),
-      ],
+  _body() {
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          _appBarNamed(),
+          const SizedBox(height: 10),
+          const SaldoConta(),
+          const SizedBox(height: 10),
+          const IconesPage(),
+          const SizedBox(height: 10),
+          const MeusCartoes(),
+          const SizedBox(height: 10),
+          const CardNovidades(),
+          const SizedBox(height: 10),
+        ],
+      ),
     );
   }
 
