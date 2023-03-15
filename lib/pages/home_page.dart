@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'homepage/card_novidades.dart';
+import 'homepage/cartao_credito.dart';
 import 'homepage/icones.dart';
 import 'homepage/meus_cartoes.dart';
 import 'homepage/saldo_conta.dart';
@@ -36,7 +37,12 @@ class _HomePageState extends State<HomePage> {
           const MeusCartoes(),
           const SizedBox(height: 10),
           const CardNovidades(),
-          const SizedBox(height: 10),
+          const SizedBox(height: 15),
+          const Divider(
+            thickness: 2.0,
+          ),
+          const CartaoCredito(),
+          const SizedBox(height: 15),
         ],
       ),
     );
@@ -50,7 +56,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             IconButton(
               icon: const Icon(Icons.compare_arrows_sharp,
-                  color: Color.fromARGB(255, 147, 147, 147), size: 30),
+                  color: Colors.purple, size: 30),
               onPressed: () {},
             ),
             IconButton(
